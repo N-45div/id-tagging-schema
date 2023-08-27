@@ -2684,17 +2684,9 @@ en:
         label: Hoops
         # hoops field placeholder
         placeholder: 1, 2, 4...
-      horse_dressage:
-        # sport=*
-        label: Dressage Riding
-        options:
-          # sport=equestrian
-          equestrian: 'Yes'
-          # sport=undefined
-          undefined: 'No'
       horse_riding:
         # leisure=*
-        label: Horseback Riding
+        label: Horseback Riding Center
         options:
           # leisure=horse_riding
           horse_riding: 'Yes'
@@ -2719,14 +2711,6 @@ en:
         # horse_scale field placeholder
         placeholder: Difficult, Dangerous...
         terms: '[translate with synonyms or related terms for ''Horseback Riding Difficulty'', separated by commas]'
-      horse_stables:
-        # amenity=*
-        label: Riding Stable
-        options:
-          # amenity=stables
-          stables: 'Yes'
-          # amenity=undefined
-          undefined: 'No'
       hot_water:
         # hot_water=*
         label: Hot Water
@@ -3178,6 +3162,12 @@ en:
           stone: Stone
           # memorial=war_memorial
           war_memorial: War Memorial
+      memorial/addr:
+        # memorial:addr=*
+        label: Nearest Building Address
+        terms: '[translate with synonyms or related terms for ''Nearest Building Address'', separated by commas]'
+      memorial/addr_subtags:
+        # memorial:addr:city=*, memorial:addr:housename=*, memorial:addr:housenumber=*, memorial:addr:place=*, memorial:addr:postcode=*, memorial:addr:street=*
       message:
         # message=*
         label: Message
@@ -5251,6 +5241,14 @@ en:
       telecom/medium:
         # telecom:medium=*
         label: Medium
+      telescope/type:
+        # telescope:type=*
+        label: Type
+        options:
+          # telescope:type=optical
+          optical: Optical Telescope
+          # telescope:type=radio
+          radio: Radio Telescope
       tents:
         # tents=*
         label: Tents
@@ -9056,6 +9054,8 @@ en:
         name: Traffic Mirror
         # 'terms: blind spot,convex,corner,curved,roadside,round,safety,sphere,visibility'
         terms: <translate with synonyms or related terms for 'Traffic Mirror', separated by commas>
+      highway/traffic_sign:
+        # highway=traffic_sign | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
       highway/traffic_signals:
         # highway=traffic_signals | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
         name: Traffic Signals
@@ -9153,6 +9153,10 @@ en:
         name: Commemorative Plaque
         # 'terms: dedicatory,epitaph,historical marker,remember,remembrance,memory'
         terms: <translate with synonyms or related terms for 'Commemorative Plaque', separated by commas>
+      historic/memorial/stolperstein-EU:
+        # historic=memorial + memorial=stolperstein | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key). | Local preset for countries "Q46"
+        name: Memorial Plaque Stolperstein
+        terms: <translate with synonyms or related terms for 'Memorial Plaque Stolperstein', separated by commas>
       historic/monument:
         # historic=monument | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
         name: Monument
@@ -10328,6 +10332,11 @@ en:
         name: Covered Reservoir
         # 'terms: underground reservoir,water tank'
         terms: <translate with synonyms or related terms for 'Covered Reservoir', separated by commas>
+      man_made/satellite_dish:
+        # man_made=satellite_dish | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Satellite Dish
+        # 'terms: fixed satellite dish,motorized satellite dish,parabolic dish,satellite communication,tracking satellite dish'
+        terms: <translate with synonyms or related terms for 'Satellite Dish', separated by commas>
       man_made/silo:
         # man_made=silo | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
         name: Silo
@@ -10392,6 +10401,20 @@ en:
         name: Tailings Pond
         # 'terms: mining,separation,slurry'
         terms: <translate with synonyms or related terms for 'Tailings Pond', separated by commas>
+      man_made/telescope:
+        # man_made=telescope | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Telescope
+        terms: <translate with synonyms or related terms for 'Telescope', separated by commas>
+      man_made/telescope/optical:
+        # man_made=telescope + telescope:type=optical | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Optical Telescope
+        # 'terms: refracting telescope,reflecting telescope'
+        terms: <translate with synonyms or related terms for 'Optical Telescope', separated by commas>
+      man_made/telescope/radio:
+        # man_made=telescope + telescope:type=radio | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
+        name: Radio Telescope
+        # 'terms: ground station,radio dish,radio antenna'
+        terms: <translate with synonyms or related terms for 'Radio Telescope', separated by commas>
       man_made/torii:
         # man_made=torii | Translate the primary name. Optionally, add equivalent synonyms on newlines in order of preference (press the Return key).
         name: Torii
